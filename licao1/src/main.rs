@@ -141,16 +141,12 @@ mod tests {
     #[test]
     fn testa_500() {
         let result = value_as_notes(500);
-        assert_eq!(result, "5 nota(s) de R$ 100,00\n0 nota(s) de R$ 1,00");
+        assert_eq!(result, "5 nota(s) de R$ 100,00\n0 nota(s) de R$ 50,00\n0 nota(s) de R$ 20,00\n0 nota(s) de R$ 10,00\n0 nota(s) de R$ 5,00\n0 nota(s) de R$ 2,00\n0 nota(s) de R$ 1,00\n");
    }
    #[test]
    fn testa_501() {
        let result = value_as_notes(501);
-       assert_eq!(result, "5 nota(s) de R$ 100,00\n1 nota(s) de R$ 1,00");
+       assert_eq!(result, "5 nota(s) de R$ 100,00\n0 nota(s) de R$ 50,00\n0 nota(s) de R$ 20,00\n0 nota(s) de R$ 10,00\n0 nota(s) de R$ 5,00\n0 nota(s) de R$ 2,00\n1 nota(s) de R$ 1,00\n");
   }
-  #[test]
-   fn testa_501() {
-       let result = value_as_notes(501);
-       assert_eq!(result, "5 nota(s) de R$ 100,00\n1 nota(s) de R$ 1,00");
-  }
+  
 }
