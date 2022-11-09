@@ -1,7 +1,15 @@
 fn main() {
     
     let textodenotas = value_as_notes(8877);
+    let textodenotas2 = value_as_notes(853);
+    let textodenotas3 = value_as_notes(48);
+    let textodenotas4 = value_as_notes(9);
+    let textodenotas5 = value_as_notes(576);
     println!("{}",textodenotas);
+    println!("{}",textodenotas2);
+    println!("{}",textodenotas3);
+    println!("{}",textodenotas4);
+    println!("{}",textodenotas5);
 }
 /*
 
